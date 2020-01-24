@@ -1,6 +1,15 @@
 ﻿
 # storj-ipfs
 
+Note: This project was done as a thought-experiment to explore novel uses of relatively flat distributed networks.  The goal of this effort was to combine features of the IPFS protocol with foundational features of Storj, providing the strongest 
+
+
+## upload flow
+![picture](images/chimera-data-upload.png)
+
+## download flow
+![picture](images/chimera-data-download.png)
+
 ## Install and configure- Go
 * Install Go for your platform by following the instructions in given link
 [Refer: Installing Go](https://golang.org/doc/install#install)
