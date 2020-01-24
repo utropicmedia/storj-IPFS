@@ -1,0 +1,13 @@
+{
+    "apiKey"    : "change-me-to-the-api-key-created-in-satellite-gui",
+    "satelliteURL"  : "us-central-1.tardigrade.io:7777",
+    "encryptionPassphrase": "you'll never guess this",
+    "bucketName"   : "change-me-to-desired-bucket-name",
+    "uploadPath"   : "optionalpath/requiredfilename",
+    "serializedScope" :"change-me-to-the-api-key-created-in-encryption-access-apiKey",
+    "key": "secret-key-to-protect-Storj-data-of-32-letters",
+
+    "disallowReads": "true/false-to-disallow-reads",
+    "disallowWrites": "true/false-to-disallow-writes",
+    "disallowDeletes": "true/false-to-disallow-deletes"
+}

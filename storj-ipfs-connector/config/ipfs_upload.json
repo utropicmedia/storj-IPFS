@@ -1,0 +1,6 @@
+{ 
+    "hostName"  : "ipfsHostName",
+    "port"      : "5001",
+    "path"      : "localFilePath/fileName.fileExtention",
+    "chunkSize" : "chunkSizeToSplitData"
+}

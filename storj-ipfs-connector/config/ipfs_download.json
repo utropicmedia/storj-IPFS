@@ -1,0 +1,11 @@
+{ 
+    "hostName"      : "ipfsHostName",
+    "port"          : "5001",
+    "shareableHash" : "hash (from ipfs) of file to download",
+    "downloadPath"  : "localFilePath",
+    "apiKey"    : "change-me-to-the-api-key-created-in-satellite-gui",
+    "satelliteURL"  : "us-central-1.tardigrade.io:7777",
+    "encryptionPassphrase": "you'll never guess this",
+    "serializedScope" :"change-me-to-the-api-key-created-in-encryption-access-apiKey",
+    "key"           :"uploadedFileSecretKeyFromUser"
+}
