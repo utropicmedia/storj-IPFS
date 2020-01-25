@@ -1,7 +1,7 @@
 ﻿
 # storj-ipfs
 
-Note: This project was done as a thought-experiment to explore novel uses of relatively flat distributed networks.  The goal of this effort was to combine features of the IPFS protocol with foundational features of Storj, providing the strongest 
+Note: This project was done as a thought-experiment to explore novel uses of relatively flat distributed networks.  The goal of this effort was to combine features of the IPFS protocol with foundational features of the Storj protocol to evaluate the feasability to provide a global data plane with self-sustaining economic mechanics.
 
 
 ## upload flow
