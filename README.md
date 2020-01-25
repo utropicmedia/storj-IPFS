@@ -137,68 +137,68 @@ $ go build
 
 
 ## Run the command-line tool
-    storj-ipfs-connector.exe [global options] command [command options] [arguments...]
+    storj-ipfs-connector [global options] command [command options] [arguments...]
 **NOTE**: Make sure `ipfs deamon` is already running on seperate `terminal` before using these commands. The following commands operate in a Windows platform system:
 
 * Get help
 ```
-    $ storj-ipfs-connector.exe -h
+    $ storj-ipfs-connector -h
 ```
 
 * Check version
 ```
-    $ storj-ipfs-connector.exe -v
+    $ storj-ipfs-connector -v
 ```
 
 * Read file data from desired IPFS instance and upload it to given Storj network bucket using Serialized Scope Key.
     * **NOTE**: Filename arguments are optional.  Default locations are used.
 ```
-    $ storj-ipfs-connector.exe store ./config/ipfs_upload.json ./config/storj_config.json  
+    $ storj-ipfs-connector store ./config/ipfs_upload.json ./config/storj_config.json  
 ```
 * Read file data from desired IPFS instance and upload it to given Storj network bucket using API key and EncryptionPassPhrase from storj_config.json and creates an unrestricted shareable Serialized Scope Key.  
     * **NOTE**: Filename arguments are optional.  Default locations are used.
 ```
-    $ storj-ipfs-connector.exe store ./config/ipfs_upload.json ./config/storj_config.json key
+    $ storj-ipfs-connector store ./config/ipfs_upload.json ./config/storj_config.json key
 ```
 
 * Read file data from desired IPFS instance and upload it to given Storj network bucket using API key and EncryptionPassPhrase from storj_config.json and creates a restricted shareable Serialized Scope Key.  
     * **NOTE**: Filename arguments are optional.  Default locations are used. `restrict` can only be used with `key`.
 ```
-    $ storj-ipfs-connector.exe store ./config/ipfs_upload.json ./config/storj_config.json key restrict
+    $ storj-ipfs-connector store ./config/ipfs_upload.json ./config/storj_config.json key restrict
 ```
 
 * Read file data in `debug` mode from desired IPFS instance and upload it to given Storj network bucket.
     * **NOTE**: Filename arguments are optional.  Default locations are used. Make sure `debug` folder already exist in project folder.
 ```
-    $ storj-ipfs-connector.exe store debug ./config/ipfs_upload.json ./config/storj_config.json  
+    $ storj-ipfs-connector store debug ./config/ipfs_upload.json ./config/storj_config.json  
 ```
 
 
 * Read and parse Storj network's configuration, in JSON format, from a desired file and upload a sample object
 ```
-    $ storj-ipfs-connector.exe test 
+    $ storj-ipfs-connector test 
 ```
 
 * Read and parse Storj network's configuration, in JSON format, from a desired file and upload a sample object in debug mode.
     * **NOTE**: Default locations are used. Make sure `debug` folder already exist in project folder.
 ```
-    $ storj-ipfs-connector.exe test debug 
+    $ storj-ipfs-connector test debug 
 ```
 
 * Read and parse IPFS network's configuration, storj Serialized Scope Key and file hash, in JSON format, from a desired file and download file on local system in desired location.
     * **NOTE**: Make sure the download folder given in `ipfs_download.json` already exist, if it doesn't, downloaded data will not be saved. `serializedScope` will be used to access storj data.
 ```
-    $ storj-ipfs-connector.exe download ./config/ipfs_download.json 
+    $ storj-ipfs-connector download ./config/ipfs_download.json 
 ```
 
 * Read and parse IPFS network's configuration, storj API Key, Satellite, EncryptionPassPharse and file hash in JSON format, from a desired file and download file on local system in desired location.
     * **NOTE**: Make sure the download folder given in `ipfs_download.json` already exist, if it doesn't, downloaded data will not be saved. `apiKey` will be used to access storj data.
 ```
-    $ storj-ipfs-connector.exe download ./config/ipfs_download.json key
+    $ storj-ipfs-connector download ./config/ipfs_download.json key
 ```
 
 * Read and parse IPFS network's configuration and file hash, in JSON format, from a desired file and download file in `debug` mode on local system in desired location.
     * **NOTE**: Make sure the download folder given in `ipfs_download.json` already exist, if it doesn't, downloaded data will not be saved.
 ```
-    $ storj-ipfs-connector.exe download debug ./config/ipfs_download.json 
+    $ storj-ipfs-connector download debug ./config/ipfs_download.json 
 ```
